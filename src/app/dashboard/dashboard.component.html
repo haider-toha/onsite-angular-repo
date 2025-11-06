@@ -1,0 +1,12 @@
+<div>
+  <h2>Bank of America Dashboard</h2>
+  
+  <h3>Account Summary</h3>
+  <div *ngFor="let account of accounts">
+    <p><strong>{{ account.name }}:</strong> ${{ formatBalance(account.balance) }}</p>
+  </div>
+  
+  <p><strong>Total Balance:</strong> ${{ formatBalance(totalBalance) }}</p>
+  
+  <button mat-raised-button color="primary">View Details</button>
+</div>
